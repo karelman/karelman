@@ -8,30 +8,154 @@
     <link href="style.css" rel="stylesheet">
     <script src="thumbnail.js"></script>
     <title>NBA新闻</title>
+
+    <link href="css/poposlides.css" rel="stylesheet">
+    <style>
+        .s1 {
+            position: fixed;
+            z-index: 10;
+            left: 50%;
+            top: 50%;
+            margin: -150px 0 0 -250px;
+            width: 500px;
+            height: 300px;
+            background: rgba(255, 255, 255, .7);
+            box-shadow: 0 0 15px rgba(0, 0, 0, .3);
+        }
+
+        .s1 p {
+            margin: 0;
+            padding: 50px 0 20px 0;
+            font-family: Arial;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .s1 span {
+            display: block;
+            font-family: Arial;
+            font-size: 25px;
+            color: #666;
+            text-align: center;
+        }
+
+        .s1 a {
+            margin: 20px auto 0 auto;
+            display: block;
+            width: 220px;
+            height: 50px;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial;
+            font-size: 25px;
+            background: #f88371;
+        }
+
+        .s1 a:hover {
+            background: #ed6f5c;
+        }
+
+        @media (max-width:480px) {
+
+            .s1 {
+                margin: -127px 0 0 0;
+                width: 80%;
+                height: 255px;
+                left: 10%;
+            }
+
+            .s1 p {
+                font-size: 36px;
+            }
+
+            .s1 span {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <img src="https://res.nba.cn/static/styles/images/header-bg.png" alt="NBA新闻" height="100" width="100%">
+    <header class="header-main">
+        <a href="index.html"><img alt="NBA新闻" title="NBA新闻" class="logo-img"
+                src="https://res.nba.cn/resource/mat1/chinanba/images/nbalogo/nba-icon.png"></a>
+        <!--img src="https://res.nba.cn/static/styles/images/header-bg.png" alt="NBA新闻" height="100" width="100%"-->
     </header>
 
     <main>
 
         <aside>
             <ul>
-                <a href="bilibili.html">观看视频</a>
+                <li><a href="bilibili.html">观看视频</a></li>
+                <li><a href="#">今日热点</a></li>
+                <li><a href="#">战绩排名</a></li>
+                <li><a href="#">联系我们</a></li>
             </ul>
         </aside>
 
         <article>
-            <h1>NBA战报(2022-03-08)</h1>
-            <h2>金州勇士 VS 丹佛掘金</h2>
-            <img id="smart-image" class="small" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190116%2F4fd4392182da46a9861fdd12bdca6d81.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649353666&t=ae2cebf78fa648ab2f4da3fe0876c7d0">           
-            <h3>勇士主力缺席，遭遇五连败</h3>
-            <p>勇士队又输球了，在客场面对掘金队的比赛中，勇士队的维金斯、库里和克莱缺席，格林也无法出战，也就是说勇士队四大核心主力缺席了这场比赛。在阵容非常不完整的情况下，勇士队难以在客场击败掘金队，最终勇士队在客场输了7分，遭遇到了赛季最长的5连败，过去11场比赛，勇士队输掉了其中的9场，他们的排名再次下滑至西部第3位。</p> 
+
+            <div class="slides-box">
+                <ul class="slides">
+                    <li>
+                        <h4>欧文狂砍50分创赛季新高 篮网轻取黄蜂</h4>
+                        <a href="#">
+                            <img src="https://cdn.nba.com/manage/2022/03/GettyImages-1238247902.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>【球星集锦】普尔vs掘金 32+7飙进8记三分</h4>
+                        <a href="#">
+                            <img
+                                src="https://www.si.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_960/MTg3OTA2NTc1MDM2MzI2OTYz/dcovjamorant_h.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>艾顿21+19布里奇斯关键封盖 太阳险胜魔术</h4>
+                        <a href="#">
+                            <img
+                                src="https://e0.365dm.com/22/03/768x432/skysports-nba-jokic-nuggets_5698071.jpg?20220308062110">
+                        </a>
+                    </li>
+                    <li>
+                        <h4>官宣：怀斯曼将前往发展联盟进行两场比赛</h4>
+                        <a href="#">
+                            <img
+                                src="https://library.sportingnews.com/2021-11/stephen-curry-and-steve-kerr_gs29p5suu0vn1hcmmg1jgt2uj.jpeg">
+                        </a>
+                    </li>
+                    <!-- <li
+                        style="background: url('https://img1.baidu.com/it/u=1296750307,655108108&fm=253&fmt=auto&app=120&f=JPEG?w=647&h=404') center">
+                    </li> -->
+                </ul>
+            </div>
+            <script src="js/jquery-1.8.3.min.js"></script>
+            <script src="js/poposlides.js"></script>
+            <script>
+                $(".slides").poposlides();
+            </script>
+
+            <h1>NBA战报 勇士VS掘金 </h1>
+            <div class="tit-bar"><span class="time">北京时间：2022-03-08</span></div>
+            <h2>约基奇32+15+13 掘金力克勇士取得三连胜</h2>
+            <img id="smart-image" class="small"
+                src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190116%2F4fd4392182da46a9861fdd12bdca6d81.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1649353666&t=ae2cebf78fa648ab2f4da3fe0876c7d0">
+            <p>点击查看大图</p>
+            <h4>勇士主力缺席，遭遇五连败</h4>
+            <p class="info" style="text-indent:2em;">
+                勇士队又输球了，在客场面对掘金队的比赛中，勇士队的维金斯、库里和克莱缺席，格林也无法出战，也就是说勇士队四大核心主力缺席了这场比赛。在阵容非常不完整的情况下，勇士队难以在客场击败掘金队，最终勇士队在客场输了7分，遭遇到了赛季最长的5连败，过去11场比赛，勇士队输掉了其中的9场，他们的排名再次下滑至西部第3位。
+            </p>
+            <p class="info" style="text-indent:2em;">
+            这场比赛勇士队虽然遭遇5连败，但是球队也有亮点，此役球队3位年轻球员迎来了爆发，他们在比赛中都有着非常不错的表现，分别是穆迪、普尔和库明加，这三位球员都是勇士队重点培养的球员，在四大主力缺席时，他们也都得到了非常多表现的机会，而他们也没有让球队失望，此役他们打出了非常亮眼的发挥。其中发挥最闪耀的则是普尔，在克莱复出后，普尔一直担任球队替补的角色，这一定程度上影响到了他的发挥。而在这场比赛中，普尔也得到了首发出场的机会，他再次在场上展现出了自身出众的进攻实力，在内外线都有着非常不错的表现。
+            </p>
             <p>点击图片查看详细新闻</p>
-            <a href="https://china.nba.cn/article/index.htm?articleId=20220308124101"><img height="400" title="勇士VS掘金" alt="勇士VS掘金"
+            <a href="https://china.nba.cn/article/index.htm?articleId=20220308124101"><img height="400" title="勇士VS掘金"
+                    alt="勇士VS掘金"
                     src="https://pics6.baidu.com/feed/8694a4c27d1ed21b5be212e8dab523cd50da3ffc.jpeg?token=65e44446ff5fce273c653b1dd1ce2334">
             </a>
         </article>
@@ -39,8 +163,8 @@
     </main>
 
     <footer>
-        by <a href="https://www.zhihu.com/people/karelman" target="_blank">wonder</a> for <a href="https://www.adalab.cn"
-            target="_blank">Adalab</a>
+        by <a href="https://www.zhihu.com/people/karelman" target="_blank">wonder</a> for <a
+            href="https://www.adalab.cn" target="_blank">Adalab</a>
     </footer>
 
 </body>
